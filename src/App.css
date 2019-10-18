@@ -20,3 +20,23 @@
 .App-link {
   color: #09d3ac;
 }
+
+.me {
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 100vh;
+  color: white;
+  font-size: 42px;
+}
+
+code {
+  padding: .2em;
+  background: red;
+  border-radius: 19px;
+}
