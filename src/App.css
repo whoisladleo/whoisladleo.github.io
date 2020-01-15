@@ -1,25 +1,23 @@
 body {
     background: black;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .home {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    width: 100%
+    padding: 3em;
 }
 
 .home > .left {
-    /*border: 2px solid yellow;*/
     float: left;
     align-items: flex-start;
     align-self: center;
-    /*width: 48%;*/
 }
 
 .home > .right {
-    /*border: 2px solid green;*/
     align-items: flex-end;
 }
 
@@ -41,4 +39,14 @@ body {
 
 .auto {
     margin: auto;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: lighter;
+}
+
+code {
+    background: red;
+    padding: .1em .2em;
 }
