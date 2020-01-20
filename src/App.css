@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    padding: 3em;
+    /*padding: 3em;*/
 }
 
 .home > .left {
