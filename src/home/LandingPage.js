@@ -8,13 +8,14 @@ class Home extends React.Component {
         return (
             <div className="home">
                 <div className={'left auto'}>
-                    <h3 className={'lead uppercase'}>i am denis t. rwelamila</h3>
-                    <h1 className={'capitalize title'}>software developer</h1>
-                    <Button variant={'contained'} color={'primary'} size={'large'}
-                            href={"mailto:rwelamila.jr@gmail.com"}>contact me</Button>
+                    <img className="me" src={me} alt="Denis Rwelamila"/>
                 </div>
                 <div className={'right auto'}>
-                    <img className="me" src={me} alt="Denis Rwelamila"/>
+                    <h3 className={'lead uppercase'}>i am denis t. rwelamila</h3>
+                    <h1 className={'capitalize title'}>software developer</h1>
+
+                    <Button className='button' variant={'contained'} color={'primary'} size={'large'}
+                            href={"mailto:rwelamila.jr@gmail.com"}>contact me</Button>
                 </div>
             </div>
 
