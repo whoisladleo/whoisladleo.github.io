@@ -12,10 +12,10 @@ class Home extends React.Component {
                 </div>
                 <div className={'right auto'}>
                     <h3 className={'lead uppercase'}>i am denis t. rwelamila</h3>
-                    <h1 className={'capitalize title'}>software developer</h1>
+                    <h1 className={'capitalize title'}>software engineer</h1>
 
                     <Button className='button' variant={'contained'} color={'primary'} size={'large'}
-                            href={"mailto:rwelamila.jr@gmail.com"}>contact me</Button>
+                            href={"mailto:rwelamila.jr@gmail.com"}>Click to contact</Button>
                 </div>
             </div>
 

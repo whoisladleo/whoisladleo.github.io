@@ -55,6 +55,9 @@ code {
     background: red;
     padding: .1em .2em;
 }
+.MuiButton-containedPrimary {
+    background-color: #08c403 !important;
+}
 
 @media screen and (max-width: 425px){
     .home {
