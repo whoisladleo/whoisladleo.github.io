@@ -12,7 +12,7 @@ class Home extends React.Component {
                 </div>
                 <div className={'right auto'}>
                     <h3 className={'lead'}>Name: Rwelamila, Denis T.</h3>
-                    <h3>Profession: Software Engineer</h3>
+                    <h3 className={'lead mt-1'}>Profession: Software Engineer</h3>
 
                     <Button className='button' variant={'contained'} color={'primary'} size={'large'}
                             href={"mailto:rwelamila.jr@gmail.com"}>Click to contact</Button>
