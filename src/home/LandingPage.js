@@ -15,7 +15,7 @@ class Home extends React.Component {
                     <h3 className={'lead mt-1'}>Profession: Software Engineer</h3>
 
                     <Button className='button' variant={'contained'} color={'primary'} size={'large'}
-                            href={"mailto:rwelamila.jr@gmail.com"}>Click to contact</Button>
+                            href={"https://jofibo.com/s/RcMcTc7MYUN6XQjal7-v6Q"}>résumé</Button>
                 </div>
             </div>
 
