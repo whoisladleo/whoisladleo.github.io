@@ -35,3 +35,10 @@ body {
   background: var(--primary);
   border-radius: 53px;
 }
+
+.bg-circle {
+  background-image: url('../assets/circle.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 75%;
+}
