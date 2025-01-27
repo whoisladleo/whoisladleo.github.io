@@ -51,7 +51,7 @@ export default function NavMenu({ links }: NavMenuProps) {
                     </ul>
                         <div className="flex items-center justify-center gap-2 mt-4">
                             <AtSymbolIcon className="size-6"/>
-                            <a href="#" onClick={sendMail}>rwelamila[dot]jr[at]gmail[dot]com</a>
+                            <a href="#" onClick={sendMail}>rwelamila.jr[at]gmail.com</a>
                         </div>
 
                 </div>
