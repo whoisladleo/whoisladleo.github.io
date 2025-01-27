@@ -11,14 +11,13 @@ import {
     UserGroupIcon, 
     WrenchIcon 
 } from "@heroicons/react/16/solid";
+import Title from "./title";
+import { skillTitle } from "@/lib/data";
 
 export default function Skills() {
     return (
     <div className="h-screen pt-20" id="skills">
-        <div className="title-with-background">
-          <h2 className="font-bold text-2xl">Skills</h2>
-          <p className="font-bold text-6xl">Hall of fame</p>
-        </div>
+        <Title data={skillTitle}/>
         <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-12">
             <div className="p-4">
                 <div className="flex items-center gap-3">

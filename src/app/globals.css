@@ -56,5 +56,5 @@ body {
   background-image: url('../assets/bar.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 2.5rem;
+  /* padding: 2.5rem; */
 }

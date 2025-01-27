@@ -1,5 +1,6 @@
 import { 
     Link, 
+    PageTitle, 
     PortfolioItem 
 } from "@/data/do";
 
@@ -105,3 +106,13 @@ export const portfolioItems: PortfolioItem[] = [
         ],
     },
 ]
+
+export const skillTitle: PageTitle = {
+    title: 'Skills',
+    subtitle: 'Hall of fame.',
+}
+
+export const portfolioTitle: PageTitle = {
+    title: 'Portfolio',
+    subtitle: 'Real world practice.',
+}

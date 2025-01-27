@@ -9,3 +9,8 @@ export interface PortfolioItem {
     brief: string;
     responsibilities: string[];
 }
+
+export interface PageTitle { 
+    title: string;
+    subtitle: string;
+}

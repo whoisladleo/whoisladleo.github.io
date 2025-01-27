@@ -1,4 +1,6 @@
 import { PortfolioItem } from "@/data/do";
+import Title from "./title";
+import { portfolioTitle } from "@/lib/data";
 
 interface PortfolioProps {
     items: PortfolioItem[];
@@ -7,10 +9,7 @@ interface PortfolioProps {
 export default function Portfolio({ items }: PortfolioProps) {
     return (
     <div className="h-screen pt-20" id="portfolio">
-        <div className="title-with-background">
-          <h2 className="font-bold text-2xl">Portfolio</h2>
-          <p className="font-bold text-6xl">Real world practice.</p>
-        </div>
+        <Title data={portfolioTitle}/>
         <div className="grid grid-cols-1 p-12 ml-12">
             { items.map((item) => (
                 <div key={item.title} className="p-4 mb-10">
