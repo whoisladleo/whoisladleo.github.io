@@ -104,8 +104,8 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jan/2020 - Sep/2022',
         brief: 'Leading Pan-African digital agency revolutionizing the advertising and digital space in Africa.',
         responsibilities: [
-            'Designed and developed robust, user-friendly mobile applications to enhance accessibility and user engagement.',
-            'Built scalable and responsive web applications, ensuring seamless functionality across devices and platforms.'
+            'Designed and developed robust, user-friendly mobile applications to enhance accessibility and user engagement. Applications were built for sales force automations and user identity management.',
+            'Built scalable and responsive web applications, ensuring seamless functionality across devices and platforms. Web applications for banks, automotive industries and recreational industry.'
         ],
     },
     {
