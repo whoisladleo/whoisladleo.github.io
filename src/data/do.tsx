@@ -14,3 +14,8 @@ export interface PageTitle {
     title: string;
     subtitle: string;
 }
+
+export interface Skill { 
+    name: string;
+    icon: React.ReactElement;
+}

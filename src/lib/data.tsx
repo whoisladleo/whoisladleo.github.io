@@ -1,8 +1,22 @@
 import { 
     Link, 
     PageTitle, 
-    PortfolioItem 
+    PortfolioItem, 
+    Skill
 } from "@/data/do";
+import { 
+    AdjustmentsHorizontalIcon,
+    CircleStackIcon, 
+    CogIcon, 
+    CubeTransparentIcon, 
+    DevicePhoneMobileIcon, 
+    GlobeEuropeAfricaIcon, 
+    HomeModernIcon, 
+    LinkIcon, 
+    RocketLaunchIcon,
+    UserGroupIcon, 
+    WrenchIcon 
+} from "@heroicons/react/16/solid";
 
 export const navItems: Link[] = [
     {
@@ -116,3 +130,50 @@ export const portfolioTitle: PageTitle = {
     title: 'Portfolio',
     subtitle: 'Real world practice.',
 }
+
+export const skills: Skill[] = [
+    {
+        name: 'Architecture design and implementation.',
+        icon: <HomeModernIcon className="size-12"/>,
+    },
+    {
+        name: 'System orchestration.',
+        icon: <RocketLaunchIcon className="size-12"/>,
+    },
+    {
+        name: 'Continuous integration and deployment.',
+        icon: <LinkIcon className="size-12"/>,
+    },
+    {
+        name: 'API Planning and development.',
+        icon: <AdjustmentsHorizontalIcon className="size-12"/>,
+    },
+    {
+        name: 'Web Application development.',
+        icon: <GlobeEuropeAfricaIcon className="size-12"/>,
+    },
+    {
+        name: 'Mobile Application development.',
+        icon: <DevicePhoneMobileIcon className="size-12"/>,
+    },
+    {
+        name: 'Web scrapping.',
+        icon: <WrenchIcon className="size-12"/>,
+    },
+    {
+        name: 'Automations.',
+        icon: <CogIcon className="size-12"/>,
+    },
+    {
+        name: 'Databse design and implementation.',
+        icon: <CircleStackIcon className="size-12"/>,
+    },
+    {
+        name: 'Resource gathering and documentation.',
+        icon: <CubeTransparentIcon className="size-12"/>,
+    },
+    {
+        name: 'Team management.',
+        icon: <UserGroupIcon className="size-12"/>,
+    }
+]
