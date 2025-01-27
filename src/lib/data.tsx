@@ -39,15 +39,15 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jun/2024 - Present',
         brief: 'AfyaHewani is an ecosystem that bridges the gap between insurers, health care providers and patients.',
         responsibilities: [
-            'Directed all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
-            'Led a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
-            'Designed and implemented system and task automations to enhance operational efficiency.',
-            'Managed continuous integration and deployment pipelines to support seamless platform updates.',
-            'Collaborated with stakeholders to ensure satisfaction and alignment with project goals.',
-            'Developed and executed a comprehensive product roadmap to guide strategic growth.',
-            'Oversaw resource management and allocation to optimize team productivity and project delivery.',
-            'Established and maintained relationships with investors to secure funding and support.',
-            'Led governance and decision-making processes to uphold project integrity and long-term vision.'
+            'Directing all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
+            'Leading a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
+            'Designing and implementing system and task automations to enhance operational efficiency.',
+            'Managing continuous integration and deployment pipelines to support seamless platform updates.',
+            'Collaborating with stakeholders to ensure satisfaction and alignment with project goals.',
+            'Developing and executing a comprehensive product roadmap to guide strategic growth.',
+            'Overseeing resource management and allocation to optimize team productivity and project delivery.',
+            'Establishing and maintaining relationships with investors to secure funding and support.',
+            'Leading governance and decision-making processes to uphold project integrity and long-term vision.'
         ],
     },
     {
@@ -55,11 +55,11 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Oct/2024 - Present',
         brief: 'Managing your payments has never been easier. Enjoy low-cost transfers to friends and family across the globe. Instantly get a virtual card for all your online, in-store and international transactions. Simplicity, security and convenience.',
         responsibilities: [
-            'Spearhead technical decisions for the project, including system design and architecture, ensuring scalability and performance.',
-            'Lead the development team to build and maintain a user-friendly and functional platform.',
-            'Oversee system automations and integrations to streamline operations and improve efficiency.',
-            'Implement task automation processes to optimize productivity and reduce manual workloads.',
-            'Manage continuous integration and deployment pipelines.'
+            'Spearheading technical decisions for the project, including system design and architecture, ensuring scalability and performance.',
+            'Leading the development team to build and maintain a user-friendly and functional platform.',
+            'Overseeing system automations and integrations to streamline operations and improve efficiency.',
+            'Implementing task automation processes to optimize productivity and reduce manual workloads.',
+            'Managing continuous integration and deployment pipelines.'
         ],
     },
     {
@@ -67,19 +67,19 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jun/2024 - Present',
         brief: 'Flowteller connects fintechs and providers to a network of offline agents to move cash, collect payments, activates and support customers. ',
         responsibilities: [
-            'Directed all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
-            'Led a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
-            'Designed and implemented system and task automations to enhance operational efficiency.',
-            'Managed continuous integration and deployment pipelines to support seamless platform updates.',
-            'Collaborated with stakeholders to ensure satisfaction and alignment with project goals.',
-            'Oversaw resource management and allocation to optimize team productivity and project delivery.',
-            'Led governance and decision-making processes to uphold project integrity and long-term vision.'
+            'Directing all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
+            'Leading a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
+            'Designing and implementing system and task automations to enhance operational efficiency.',
+            'Managing continuous integration and deployment pipelines to support seamless platform updates.',
+            'Collaborating with stakeholders to ensure satisfaction and alignment with project goals.',
+            'Overseeing resource management and allocation to optimize team productivity and project delivery.',
+            'Leading governance and decision-making processes to uphold project integrity and long-term vision.'
         ],
     },
     {
         title: "Tunzaa / Consulting DevOps Engineer",
         date: 'Jun/2022 - Dec/2022',
-        brief: 'Tunzaa leverages a combination of habit-transforming techniques to improve financial habits of everyday Africans',
+        brief: 'Tunzaa leverages a combination of habit-transforming techniques to improve financial habits of everyday Africans.',
         responsibilities: [
             'Lead and manage a cross-functional team to ensure efficient collaboration and project delivery.',
             'Oversee continuous integration and deployment processes, ensuring seamless updates and operational stability.',
@@ -164,7 +164,7 @@ export const skills: Skill[] = [
         icon: <CogIcon className="size-6"/>,
     },
     {
-        name: 'Databse design and implementation.',
+        name: 'Database design and implementation.',
         icon: <CircleStackIcon className="size-6"/>,
     },
     {
