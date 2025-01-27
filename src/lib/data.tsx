@@ -21,7 +21,7 @@ import {
 export const navItems: Link[] = [
     {
         name: 'Home',
-        url: '/',
+        url: '#home',
     },
     {
         name: 'Skills',

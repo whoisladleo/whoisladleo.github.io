@@ -8,7 +8,7 @@ interface PortfolioProps {
 
 export default function Portfolio({ items }: PortfolioProps) {
     return (
-    <div className="min-h-screen pt-20" id="portfolio">
+    <div className="min-h-screen md:pt-20" id="portfolio">
         <Title data={portfolioTitle}/>
         <div className="grid grid-cols-1 p-4 md:p-12 md:ml-12">
             { items.map((item) => (
