@@ -39,16 +39,15 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jun/2024 - Present',
         brief: 'AfyaHewani is an ecosystem that bridges the gap between insurers, health care providers and patients.',
         responsibilities: [
-            'Leading technical decision of the project, making key designs and architecture decisions.',
-            'Leading the team that builds and maintains the platform, ensuring it is functional and user-friendly.',
-            'Handling system automations and integrations.',
-            'Task automations.',
-            'Continous integration and deployment.',
-            'Ensure stake holder satisfaction.',
-            'Plan and develop the product roadmap.',
-            'Resource management and allocation.',
-            'Investor relations.',
-            'Decision making and governance.'
+            'Directed all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
+            'Led a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
+            'Designed and implemented system and task automations to enhance operational efficiency.',
+            'Managed continuous integration and deployment pipelines to support seamless platform updates.',
+            'Collaborated with stakeholders to ensure satisfaction and alignment with project goals.',
+            'Developed and executed a comprehensive product roadmap to guide strategic growth.',
+            'Oversaw resource management and allocation to optimize team productivity and project delivery.',
+            'Established and maintained relationships with investors to secure funding and support.',
+            'Led governance and decision-making processes to uphold project integrity and long-term vision.'
         ],
     },
     {
@@ -56,11 +55,11 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Oct/2024 - Present',
         brief: 'Managing your payments has never been easier. Enjoy low-cost transfers to friends and family across the globe. Instantly get a virtual card for all your online, in-store and international transactions. Simplicity, security and convenience.',
         responsibilities: [
-            'Leading technical decision of the project, making key designs and architecture decisions.',
-            'Leading the team that builds and maintains the platform, ensuring it is functional and user-friendly.',
-            'Handling system automations and integrations.',
-            'Task automations.',
-            'Continous integration and deployment.',
+            'Spearhead technical decisions for the project, including system design and architecture, ensuring scalability and performance.',
+            'Lead the development team to build and maintain a user-friendly and functional platform.',
+            'Oversee system automations and integrations to streamline operations and improve efficiency.',
+            'Implement task automation processes to optimize productivity and reduce manual workloads.',
+            'Manage continuous integration and deployment pipelines.'
         ],
     },
     {
@@ -68,13 +67,13 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jun/2024 - Present',
         brief: 'Flowteller connects fintechs and providers to a network of offline agents to move cash, collect payments, activates and support customers. ',
         responsibilities: [
-            'Leading technical decision of the project, making key designs and architecture decisions.',
-            'Leading the team that builds and maintains the platform, ensuring it is functional and user-friendly.',
-            'Handling system automations and integrations.',
-            'Task automations.',
-            'Continous integration and deployment.',
-            'Ensure stake holder satisfaction.',
-            'Decision making and governance.'
+            'Directed all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
+            'Led a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
+            'Designed and implemented system and task automations to enhance operational efficiency.',
+            'Managed continuous integration and deployment pipelines to support seamless platform updates.',
+            'Collaborated with stakeholders to ensure satisfaction and alignment with project goals.',
+            'Oversaw resource management and allocation to optimize team productivity and project delivery.',
+            'Led governance and decision-making processes to uphold project integrity and long-term vision.'
         ],
     },
     {
@@ -82,10 +81,10 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jun/2022 - Dec/2022',
         brief: 'Tunzaa leverages a combination of habit-transforming techniques to improve financial habits of everyday Africans',
         responsibilities: [
-            'Team management.',
-            'Continous integration and deployment.',
-            'Handling system automations and integrations.',
-            'Product planning and development.',
+            'Lead and manage a cross-functional team to ensure efficient collaboration and project delivery.',
+            'Oversee continuous integration and deployment processes, ensuring seamless updates and operational stability.',
+            'Design and implement system automations and integrations to streamline workflows and improve system efficiency.',
+            'Develop and execute product planning strategies to align with business goals and user needs.'
         ],
     },
     {
@@ -93,11 +92,11 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Dec/2022 - Jun/2023',
         brief: 'Ramani is a YC-backed FinTech startup in East Africa that\'s engineering new financial infrastructure for Africa\'s Supply Chains.',
         responsibilities: [
-            'Task automations.',
-            'Web scraping and data extraction.',
-            'Data normalizations and standardizations.',
-            'Dashboard management, visualizations and reporting.',
-            'API development and integration.',
+            'Designed and implemented task automation processes to improve efficiency and reduce manual workloads.',
+            'Developed web scraping and data extraction pipelines to gather valuable insights from diverse data sources.',
+            'Performed data normalization and standardization to ensure consistency and accuracy across datasets.',
+            'Managed dashboards, visualizations, and reporting tools to provide actionable insights for stakeholders.',
+            'Developed and integrated APIs to enable seamless communication between systems and enhance platform functionality.'
         ],
     },
     {
@@ -105,8 +104,8 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Jan/2020 - Sep/2022',
         brief: 'Leading Pan-African digital agency revolutionizing the advertising and digital space in Africa.',
         responsibilities: [
-            'Building mobile applications.',
-            'Building web applications.',
+            'Designed and developed robust, user-friendly mobile applications to enhance accessibility and user engagement.',
+            'Built scalable and responsive web applications, ensuring seamless functionality across devices and platforms.'
         ],
     },
     {
@@ -114,9 +113,9 @@ export const portfolioItems: PortfolioItem[] = [
         date: 'Oct/2018 - Jan/2020',
         brief: 'Excellence, Innovation and Technological Foresight.',
         responsibilities: [
-            'Develop mobile applications.',
-            'Develop EMR modules.',
-            'Support EMR Applications.'
+            'Developed user-focused mobile applications to enhance healthcare accessibility and engagement.',
+            'Designed and implemented Electronic Medical Record (EMR) modules to streamline healthcare workflows.',
+            'Provided ongoing support and maintenance for EMR applications, ensuring reliability and optimal performance.'
         ],
     },
 ]
