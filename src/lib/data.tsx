@@ -1,5 +1,5 @@
 import { 
-    Link, 
+    NavLink, 
     PageTitle, 
     PortfolioItem, 
     Skill
@@ -18,7 +18,7 @@ import {
     WrenchIcon 
 } from "@heroicons/react/16/solid";
 
-export const navItems: Link[] = [
+export const navItems: NavLink[] = [
     {
         name: 'Home',
         url: '#home',
