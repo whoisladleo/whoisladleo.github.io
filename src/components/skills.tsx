@@ -14,7 +14,7 @@ import {
 
 export default function Skills() {
     return (
-    <div className="h-screen" id="skills">
+    <div className="h-screen pt-20" id="skills">
         <div className="title-with-background">
           <h2 className="font-bold text-2xl">Skills</h2>
           <p className="font-bold text-6xl">Hall of fame</p>

@@ -6,7 +6,7 @@ interface PortfolioProps {
 
 export default function Portfolio({ items }: PortfolioProps) {
     return (
-    <div className="h-screen" id="portfolio">
+    <div className="h-screen pt-20" id="portfolio">
         <div className="title-with-background">
           <h2 className="font-bold text-2xl">Portfolio</h2>
           <p className="font-bold text-6xl">Real world practice.</p>
