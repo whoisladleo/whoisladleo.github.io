@@ -134,46 +134,46 @@ export const portfolioTitle: PageTitle = {
 export const skills: Skill[] = [
     {
         name: 'Architecture design and implementation.',
-        icon: <HomeModernIcon className="size-12"/>,
+        icon: <HomeModernIcon className="size-6"/>,
     },
     {
         name: 'System orchestration.',
-        icon: <RocketLaunchIcon className="size-12"/>,
+        icon: <RocketLaunchIcon className="size-6"/>,
     },
     {
         name: 'Continuous integration and deployment.',
-        icon: <LinkIcon className="size-12"/>,
+        icon: <LinkIcon className="size-6"/>,
     },
     {
         name: 'API Planning and development.',
-        icon: <AdjustmentsHorizontalIcon className="size-12"/>,
+        icon: <AdjustmentsHorizontalIcon className="size-6"/>,
     },
     {
         name: 'Web Application development.',
-        icon: <GlobeEuropeAfricaIcon className="size-12"/>,
+        icon: <GlobeEuropeAfricaIcon className="size-6"/>,
     },
     {
         name: 'Mobile Application development.',
-        icon: <DevicePhoneMobileIcon className="size-12"/>,
+        icon: <DevicePhoneMobileIcon className="size-6"/>,
     },
     {
         name: 'Web scrapping.',
-        icon: <WrenchIcon className="size-12"/>,
+        icon: <WrenchIcon className="size-6"/>,
     },
     {
         name: 'Automations.',
-        icon: <CogIcon className="size-12"/>,
+        icon: <CogIcon className="size-6"/>,
     },
     {
         name: 'Databse design and implementation.',
-        icon: <CircleStackIcon className="size-12"/>,
+        icon: <CircleStackIcon className="size-6"/>,
     },
     {
         name: 'Resource gathering and documentation.',
-        icon: <CubeTransparentIcon className="size-12"/>,
+        icon: <CubeTransparentIcon className="size-6"/>,
     },
     {
         name: 'Team management.',
-        icon: <UserGroupIcon className="size-12"/>,
+        icon: <UserGroupIcon className="size-6"/>,
     }
 ]
