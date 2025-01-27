@@ -1,7 +1,8 @@
 import NavMenu from "@/components/nav-menu";
 import Welcome from "@/components/welcome";
-import { navItems } from "@/lib/data";
+import { navItems, portfolioItems } from "@/lib/data";
 import Skills from "@/components/skills";
+import Portfolio from "@/components/portfolio";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <NavMenu links={navItems}/>
         <Welcome/>
         <Skills/>
+        <Portfolio items={portfolioItems}/>
     </div>
     /* <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
