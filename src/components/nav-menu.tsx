@@ -33,7 +33,7 @@ export default function NavMenu({ links }: NavMenuProps) {
             const sections = document.querySelectorAll('.min-h-screen');
             if (!sections) return;
             sections.forEach((section) => {
-                const sectionTop = section.offsetTop - 60;
+                const sectionTop = (section as HTMLElement).offsetTop - 60;
                 if(pageYOffset >= sectionTop) {
                     setActiveLink('#'+section.getAttribute('id'));
                 }
