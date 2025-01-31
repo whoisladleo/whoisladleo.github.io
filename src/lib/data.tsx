@@ -51,7 +51,7 @@ export const portfolioItems: PortfolioItem[] = [
         ],
     },
     {
-        title: 'Simba Money / Consulting Leading Engineer',
+        title: 'Simba Money / Consulting Lead Engineer',
         date: 'Oct/2024 - Present',
         brief: 'Managing your payments has never been easier. Enjoy low-cost transfers to friends and family across the globe. Instantly get a virtual card for all your online, in-store and international transactions. Simplicity, security and convenience.',
         responsibilities: [
