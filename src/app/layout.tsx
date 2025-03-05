@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="p:domain_verify" content="f0cda4769f2a450a0815dde1d8c9e9c5"/>
       <body
         className={`${montserrat.variable} antialiased`}
       >
