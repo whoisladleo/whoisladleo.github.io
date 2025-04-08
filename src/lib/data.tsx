@@ -5,17 +5,14 @@ import {
     Skill
 } from "@/data/do";
 import { 
-    AdjustmentsHorizontalIcon,
-    CircleStackIcon, 
-    CogIcon, 
-    CubeTransparentIcon, 
-    DevicePhoneMobileIcon, 
-    GlobeEuropeAfricaIcon, 
-    HomeModernIcon, 
-    LinkIcon, 
-    RocketLaunchIcon,
+    ArrowTrendingUpIcon,
+    CloudIcon, 
+    FingerPrintIcon, 
+    HandThumbUpIcon,
+    PlayPauseIcon, 
+    PresentationChartLineIcon, 
+    PuzzlePieceIcon,
     UserGroupIcon, 
-    WrenchIcon 
 } from "@heroicons/react/16/solid";
 
 export const navItems: NavLink[] = [
@@ -35,31 +32,26 @@ export const navItems: NavLink[] = [
 
 export const portfolioItems: PortfolioItem[] = [
     {
-        title: 'AfyaHewani / Founder & CEO',
+        title: 'AfyaHewani / Founder & Solutions Architect',
         date: 'Jun/2024 - Present',
-        brief: 'AfyaHewani is an ecosystem that bridges the gap between insurers, health care providers and patients.',
+        brief: 'Founded and led the engineering, product, and infrastructure strategy for Afya Hewani, a digital platform reshaping healthcare finance through smarter insurance and patient workflows.',
         responsibilities: [
-            'Directing all technical aspects of the project, including key design and architecture decisions, ensuring a scalable and efficient platform.',
-            'Leading a cross-functional team to build, maintain, and optimize a user-friendly health ecosystem platform.',
-            'Designing and implementing system and task automations to enhance operational efficiency.',
-            'Managing continuous integration and deployment pipelines to support seamless platform updates.',
-            'Collaborating with stakeholders to ensure satisfaction and alignment with project goals.',
-            'Developing and executing a comprehensive product roadmap to guide strategic growth.',
-            'Overseeing resource management and allocation to optimize team productivity and project delivery.',
-            'Establishing and maintaining relationships with investors to secure funding and support.',
-            'Leading governance and decision-making processes to uphold project integrity and long-term vision.'
+            'Architected a modular system designed to streamline onboarding, claims, and underwriting workflows across hospitals and insurers.',
+            'Developed a mobile-first self-check-in feature reducing onboarding time from 20+ minutes to under 60 seconds.',
+            'Implemented a secure, event-driven architecture with end-to-end encryption, access control, and 2FA.',
+            'Oversaw engagements with 4 insurance companies during product discovery; pilots in preparation.',
+            'Leading roadmap development for actuarial model integration, real-time fraud checks, and coverage transparency tools.'
         ],
     },
     {
-        title: 'Simba Money / Consulting Lead Engineer',
+        title: 'Simba Money / Senior Lead Engineer',
         date: 'Oct/2024 - Present',
-        brief: 'Managing your payments has never been easier. Enjoy low-cost transfers to friends and family across the globe. Instantly get a virtual card for all your online, in-store and international transactions. Simplicity, security and convenience.',
+        brief: 'Senior leadership role driving architecture and development of Simba Money’s cross-border digital finance platform.',
         responsibilities: [
-            'Spearheading technical decisions for the project, including system design and architecture, ensuring scalability and performance.',
-            'Leading the development team to build and maintain a user-friendly and functional platform.',
-            'Overseeing system automations and integrations to streamline operations and improve efficiency.',
-            'Implementing task automation processes to optimize productivity and reduce manual workloads.',
-            'Managing continuous integration and deployment pipelines.'
+            'Led end-to-end product development and CI/CD optimization for regulatory-compliant transactions.',
+            'Mentored engineers and implemented team-wide engineering best practices.',
+            'Introduced observability and deployment standards that improved platform stability and delivery speed.',
+            'Oversaw vendor and procurement pipelines aligned with scale-up strategy.'
         ],
     },
     {
@@ -79,43 +71,38 @@ export const portfolioItems: PortfolioItem[] = [
     {
         title: "Tunzaa / Consulting DevOps Engineer",
         date: 'Jun/2022 - Dec/2022',
-        brief: 'Tunzaa leverages a combination of habit-transforming techniques to improve financial habits of everyday Africans.',
+        brief: 'Responsible for DevOps strategy and performance tuning for a fintech savings and micro-payments platform.',
         responsibilities: [
-            'Lead and manage a cross-functional team to ensure efficient collaboration and project delivery.',
-            'Oversee continuous integration and deployment processes, ensuring seamless updates and operational stability.',
-            'Design and implement system automations and integrations to streamline workflows and improve system efficiency.',
-            'Develop and execute product planning strategies to align with business goals and user needs.'
+            'Reduced deployment times by 80% by implementing Git-based CI/CD workflows.',
+            'Built fault-tolerant infrastructure and system runbooks to increase uptime and developer autonomy.'
         ],
     },
     {
         title: "Ramani.io / Senior Software Engineer",
         date: 'Dec/2022 - Jun/2023',
-        brief: 'Ramani is a YC-backed FinTech startup in East Africa that\'s engineering new financial infrastructure for Africa\'s Supply Chains.',
+        brief: 'Led backend modernization and performance initiatives for a distribution and credit facilitation platform.',
         responsibilities: [
-            'Designed and implemented task automation processes to improve efficiency and reduce manual workloads.',
-            'Developed web scraping and data extraction pipelines to gather valuable insights from diverse data sources.',
-            'Performed data normalization and standardization to ensure consistency and accuracy across datasets.',
-            'Managed dashboards, visualizations, and reporting tools to provide actionable insights for stakeholders.',
-            'Developed and integrated APIs to enable seamless communication between systems and enhance platform functionality.'
+            'Built scalable backend APIs and services powering large inventory systems across East Africa.',
+            'Automated critical onboarding and credit workflows, reducing processing time by 40%.',
+            'Defined internal code standards and contributed to engineering culture development.'
         ],
     },
     {
         title: "AIM Group / System Software Developer",
         date: 'Jan/2020 - Sep/2022',
-        brief: 'Leading Pan-African digital agency revolutionizing the advertising and digital space in Africa.',
+        brief: 'Delivered full-stack marketplace platforms with scalable architecture and resilient codebases.',
         responsibilities: [
-            'Designed and developed robust, user-friendly mobile applications to enhance accessibility and user engagement. Applications were built for sales force automations and user identity management.',
-            'Built scalable and responsive web applications, ensuring seamless functionality across devices and platforms. Web applications for banks, automotive industries and recreational industry.'
+            'Led development for key classifieds and marketplace features.',
+            'Built integrations and internal APIs, and improved testing and deployment cycles.'
         ],
     },
     {
         title: "UCC / Software Developer",
         date: 'Oct/2018 - Jan/2020',
-        brief: 'Excellence, Innovation and Technological Foresight.',
+        brief: 'Delivered healthtech solutions in collaboration with public sector partners.',
         responsibilities: [
-            'Developed user-focused mobile applications to enhance healthcare accessibility and engagement.',
-            'Designed and implemented Electronic Medical Record (EMR) modules to streamline healthcare workflows.',
-            'Provided ongoing support and maintenance for EMR applications, ensuring reliability and optimal performance.'
+            'Built mobile and EMR components that improved healthcare access and clinical data workflows.',
+            'Provided support and enhancements for mission-critical deployments across public health centers.'
         ],
     },
 ]
@@ -132,47 +119,35 @@ export const portfolioTitle: PageTitle = {
 
 export const skills: Skill[] = [
     {
-        name: 'Architecture design and implementation.',
-        icon: <HomeModernIcon className="size-6"/>,
+        name: 'Technical & Product Vision',
+        icon: <PuzzlePieceIcon className="size-6"/>,
     },
     {
-        name: 'System orchestration.',
-        icon: <RocketLaunchIcon className="size-6"/>,
-    },
-    {
-        name: 'Continuous integration and deployment.',
-        icon: <LinkIcon className="size-6"/>,
-    },
-    {
-        name: 'API Planning and development.',
-        icon: <AdjustmentsHorizontalIcon className="size-6"/>,
-    },
-    {
-        name: 'Web Application development.',
-        icon: <GlobeEuropeAfricaIcon className="size-6"/>,
-    },
-    {
-        name: 'Mobile Application development.',
-        icon: <DevicePhoneMobileIcon className="size-6"/>,
-    },
-    {
-        name: 'Web scrapping.',
-        icon: <WrenchIcon className="size-6"/>,
-    },
-    {
-        name: 'Automations.',
-        icon: <CogIcon className="size-6"/>,
-    },
-    {
-        name: 'Database design and implementation.',
-        icon: <CircleStackIcon className="size-6"/>,
-    },
-    {
-        name: 'Resource gathering and documentation.',
-        icon: <CubeTransparentIcon className="size-6"/>,
-    },
-    {
-        name: 'Team management.',
+        name: 'Team Building & Engineering Leadership',
         icon: <UserGroupIcon className="size-6"/>,
+    },
+    {
+        name: 'Scalable Systems Architecture',
+        icon: <ArrowTrendingUpIcon className="size-6"/>,
+    },
+    {
+        name: 'Agile and Lean Methodologies',
+        icon: <HandThumbUpIcon className="size-6"/>,
+    },
+    {
+        name: 'Cloud Infrastructure (AWS, Azure, Heroku)',
+        icon: <CloudIcon className="size-6"/>,
+    },
+    {
+        name: 'DevOps & CI/CD Automation.',
+        icon: <PlayPauseIcon className="size-6"/>,
+    },
+    {
+        name: 'Stakeholder Alignment & Digital Strategy',
+        icon: <FingerPrintIcon className="size-6"/>,
+    },
+    {
+        name: 'Data-Driven Innovation in Fintech & Healthtech.',
+        icon: <PresentationChartLineIcon className="size-6"/>,
     }
 ]
