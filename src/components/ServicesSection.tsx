@@ -34,19 +34,19 @@ const ServicesSection = () => {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-dark-purple">
+        <h2 className="text-4xl font-bold text-center mb-12 text-dark-slate">
           Fix What Slows Your Business Down
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-soft-purple p-6 rounded-lg text-center hover:shadow-lg transition"
+              className="bg-soft-blue p-6 rounded-lg text-center hover:shadow-lg transition"
             >
               <div className="flex justify-center mb-4">
-                <service.icon size={48} className="text-primary-purple" />
+                <service.icon size={48} className="text-primary-blue" />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-dark-purple">
+              <h3 className="text-xl font-semibold mb-3 text-dark-slate">
                 {service.title}
               </h3>
               <p className="text-neutral-gray">

@@ -9,9 +9,9 @@ const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-soft-purple">
+    <section className="py-16 px-4 bg-light-gray">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-dark-purple">
+        <h2 className="text-4xl font-bold text-center mb-12 text-dark-slate">
           30 Days Real Result at 0 Cost
         </h2>
         <div className="space-y-6">
@@ -20,7 +20,7 @@ const HowItWorksSection = () => {
               key={index} 
               className="bg-white p-6 rounded-lg shadow-md flex items-center"
             >
-              <div className="w-12 h-12 bg-primary-purple text-white rounded-full flex items-center justify-center mr-4 font-bold">
+              <div className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center mr-4 font-bold">
                 {index + 1}
               </div>
               <p className="text-lg text-neutral-gray">{step}</p>
@@ -28,7 +28,7 @@ const HowItWorksSection = () => {
           ))}
         </div>
         <div className="text-center mt-8">
-          <p className="text-xl text-dark-purple italic">
+          <p className="text-xl text-dark-slate italic">
             Cost: Just a referral and a case study "if it delivers value"
           </p>
         </div>

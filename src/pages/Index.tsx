@@ -7,11 +7,11 @@ import WhyMeSection from '@/components/WhyMeSection';
 
 const Index = () => {
   return (
-    <div className="bg-white min-h-screen text-dark-purple">
+    <div className="bg-white min-h-screen text-dark-slate">
       {/* Hero Section */}
-      <header className="bg-soft-purple py-16 px-4 text-center">
+      <header className="bg-light-gray py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold text-dark-purple mb-4">
+          <h1 className="text-5xl font-bold text-dark-slate mb-4">
             I fix what slows your business down
           </h1>
           <p className="text-xl text-neutral-gray mb-8">
@@ -20,14 +20,14 @@ const Index = () => {
           <div className="flex justify-center space-x-4">
             <a 
               href="mailto:denis@afyahewani.io" 
-              className="bg-primary-purple text-white px-6 py-3 rounded-full flex items-center hover:bg-opacity-90 transition"
+              className="bg-primary-blue text-white px-6 py-3 rounded-md flex items-center hover:bg-opacity-90 transition"
             >
               <Mail className="mr-2"/> Contact Me
             </a>
             <a 
               href="https://www.linkedin.com/in/rwelamiladenis/" 
               target="_blank" 
-              className="border border-primary-purple text-primary-purple px-6 py-3 rounded-full flex items-center hover:bg-primary-purple hover:text-white transition"
+              className="border border-primary-blue text-primary-blue px-6 py-3 rounded-md flex items-center hover:bg-primary-blue hover:text-white transition"
             >
               <Linkedin className="mr-2"/> LinkedIn
             </a>
@@ -45,13 +45,13 @@ const Index = () => {
       <WhyMeSection />
 
       {/* Final CTA */}
-      <section className="bg-dark-purple text-white text-center py-16 px-4">
+      <section className="bg-dark-slate text-white text-center py-16 px-4">
         <h2 className="text-4xl font-bold mb-6">
           Let's automate the work no one sees but everyone feels
         </h2>
         <a 
           href="mailto:denis@afyahewani.io" 
-          className="bg-primary-purple text-white px-8 py-4 rounded-full text-xl hover:bg-opacity-90 transition inline-block"
+          className="bg-primary-blue text-white px-8 py-4 rounded-md text-xl hover:bg-opacity-90 transition inline-block"
         >
           Contact Me
         </a>
