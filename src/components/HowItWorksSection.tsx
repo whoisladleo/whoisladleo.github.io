@@ -1,6 +1,3 @@
-
-import React from 'react';
-
 const HowItWorksSection = () => {
   const steps = [
     "Team interviews and shadowing to understand the current workflow",
@@ -20,7 +17,7 @@ const HowItWorksSection = () => {
               key={index} 
               className="bg-white p-6 rounded-lg shadow-md flex items-center"
             >
-              <div className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center mr-4 font-bold">
+              <div className="w-12 h-12 bg-primary-blue text-white rounded-full flex items-center justify-center mr-4 font-bold p-3">
                 {index + 1}
               </div>
               <p className="text-lg text-neutral-gray">{step}</p>

@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 import ServicesSection from '@/components/ServicesSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
