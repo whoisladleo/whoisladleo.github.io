@@ -1,27 +1,29 @@
+import { useState } from 'react';
 import { Mail, Linkedin } from 'lucide-react';
 import ServicesSection from '@/components/ServicesSection';
-import HowItWorksSection from '@/components/HowItWorksSection';
-import WhyMeSection from '@/components/WhyMeSection';
+import ContactForm from '@/components/ContactForm';
 
 const Index = () => {
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+
   return (
     <div className="bg-white min-h-screen text-dark-slate">
       {/* Hero Section */}
       <header className="bg-light-gray py-16 px-4 text-center">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-5xl font-bold text-dark-slate mb-4">
-            I fix what slows your business down
+            Three ways to accelerate your business
           </h1>
           <p className="text-xl text-neutral-gray mb-8">
-            Manual reporting, repetitive approvals, data chaos. I help teams automate backend processes so they can scale without burning out.
+            From automation that eliminates manual work, to reliable hosting that scales with you, to healthcare platforms that transform patient care.
           </p>
           <div className="flex justify-center space-x-4">
-            <a 
-              href="mailto:denis@afyahewani.io" 
+            <button 
+              onClick={() => setIsContactFormOpen(true)}
               className="bg-primary-blue text-white px-6 py-3 rounded-md flex items-center hover:bg-opacity-90 transition"
             >
               <Mail className="mr-2"/> Contact Me
-            </a>
+            </button>
             <a 
               href="https://www.linkedin.com/in/rwelamiladenis/" 
               target="_blank" 
@@ -37,23 +39,31 @@ const Index = () => {
       <ServicesSection />
 
       {/* How It Works Section */}
-      <HowItWorksSection />
+      {/* <HowItWorksSection /> */}
 
       {/* Why Me Section */}
-      <WhyMeSection />
+      {/* <WhyMeSection /> */}
 
       {/* Final CTA */}
       <section className="bg-dark-slate text-white text-center py-16 px-4">
         <h2 className="text-4xl font-bold mb-6">
-          Let's automate the work no one sees but everyone feels
+          Ready to transform your business?
         </h2>
-        <a 
-          href="mailto:denis@afyahewani.io" 
-          className="bg-primary-blue text-white px-8 py-4 rounded-md text-xl hover:bg-opacity-90 transition inline-block"
+        <button 
+          onClick={() => setIsContactFormOpen(true)}
+          className="bg-primary-blue text-white px-8 py-4 rounded-md text-xl hover:bg-opacity-90 transition"
         >
           Contact Me
-        </a>
+        </button>
       </section>
+      
+      {/* Contact Form Modal */}
+      <ContactForm 
+        isOpen={isContactFormOpen}
+        onClose={() => setIsContactFormOpen(false)}
+        subject="Business Inquiry"
+        defaultMessage="Hi Denis, I'm interested in learning more about your services. Can we schedule a consultation?"
+      />
     </div>
   );
 };
