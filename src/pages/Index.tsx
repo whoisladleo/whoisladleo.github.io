@@ -61,8 +61,8 @@ const Index = () => {
       <ContactForm 
         isOpen={isContactFormOpen}
         onClose={() => setIsContactFormOpen(false)}
-        subject="Business Inquiry"
-        defaultMessage="Hi Denis, I'm interested in learning more about your services. Can we schedule a consultation?"
+        subject="Inquiring for Experimental Plan"
+        defaultMessage="Hi Denis, I'm interested in the Experimental hosting plan. Can you provide more details and help me get started?"
       />
     </div>
   );

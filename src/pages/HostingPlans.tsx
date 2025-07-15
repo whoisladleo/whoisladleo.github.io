@@ -237,11 +237,19 @@ const HostingPlans = () => {
       <ContactForm 
         isOpen={isContactFormOpen}
         onClose={() => setIsContactFormOpen(false)}
-        subject={selectedPlan === 'Custom' ? 'Custom Hosting Plan Request' : `Hosting Plan Inquiry - ${selectedPlan}`}
+        subject={
+          selectedPlan === 'Custom' 
+            ? 'Custom Hosting Plan Request' 
+            : selectedPlan 
+              ? `Inquiring for ${selectedPlan} Plan`
+              : 'Hosting Plan Inquiry'
+        }
         defaultMessage={
           selectedPlan === 'Custom' 
             ? "Hi Denis, I need a custom hosting solution. Here are my requirements:\n\n- [Please describe your needs]\n\nCan we discuss a tailored plan?"
-            : `Hi Denis, I'm interested in the ${selectedPlan} hosting plan. Can you provide more details?`
+            : selectedPlan 
+              ? `Hi Denis, I'm interested in the ${selectedPlan} hosting plan. Can you provide more details and help me get started?`
+              : "Hi Denis, I'm interested in your hosting plans. Can you provide more details and help me get started?"
         }
       />
     </div>

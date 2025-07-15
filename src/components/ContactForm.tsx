@@ -9,7 +9,7 @@ interface ContactFormProps {
   defaultMessage?: string;
 }
 
-const ContactForm = ({ isOpen, onClose, subject = "Business Inquiry", defaultMessage = "" }: ContactFormProps) => {
+const ContactForm = ({ isOpen, onClose, subject = "Inquiring for Experimental Plan", defaultMessage = "" }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -45,7 +45,7 @@ const ContactForm = ({ isOpen, onClose, subject = "Business Inquiry", defaultMes
         setFormData({
           name: '',
           email: '',
-          subject: 'Business Inquiry',
+          subject: 'Inquiring for Experimental Plan',
           message: ''
         });
       }, 2000);
