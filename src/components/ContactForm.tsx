@@ -60,7 +60,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-lg max-w-md w-full p-6 relative">
         <button
           onClick={onClose}
@@ -94,7 +94,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-primary-blue"
               placeholder="Your name"
             />
           </div>
@@ -109,7 +109,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-primary-blue"
               placeholder="your@email.com"
             />
           </div>
@@ -123,7 +123,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
               required
               value={formData.subject}
               onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-primary-blue"
               placeholder="What's this about?"
             />
           </div>
@@ -138,7 +138,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
               rows={4}
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue resize-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-hidden focus:ring-2 focus:ring-primary-blue resize-none"
               placeholder="What would you like AI to help your business with?"
             />
           </div>
@@ -147,7 +147,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 bg-primary-blue text-white py-2 px-4 rounded-full hover:bg-opacity-90 transition disabled:opacity-50"
+              className="flex-1 bg-primary-blue text-white py-2 px-4 rounded-full hover:brightness-110 transition disabled:opacity-50"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>

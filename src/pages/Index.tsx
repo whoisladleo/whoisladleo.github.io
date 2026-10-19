@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm';
 const channels = [
   { name: 'TikTok', handle: '@whoisladleo', href: 'https://www.tiktok.com/@whoisladleo' },
   { name: 'Instagram', handle: '@whoisladleo', href: 'https://www.instagram.com/whoisladleo' },
-  { name: 'YouTube', handle: '@dennisrwelamila', href: 'https://www.youtube.com/@dennisrwelamila' },
+  { name: 'YouTube', handle: '@whoisladleo', href: 'https://www.youtube.com/@whoisladleo' },
   { name: 'X', handle: '@whoisladleo', href: 'https://x.com/whoisladleo' },
   { name: 'WhatsApp Channel', handle: 'Denis w AI', href: 'https://whatsapp.com/channel/0029Vb9cSaN47XeIH2y5yA3x' },
 ];

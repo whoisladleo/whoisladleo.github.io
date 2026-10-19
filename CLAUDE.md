@@ -10,11 +10,10 @@ This is a React-based personal portfolio website built with Vite, TypeScript, an
 
 - **Framework**: React 18 with TypeScript
 - **Build Tool**: Vite
-- **Styling**: Tailwind CSS with custom color palette
+- **Styling**: Tailwind CSS v4 (theme tokens in src/index.css @theme; no tailwind.config)
 - **UI Components**: shadcn/ui components (configured but not yet implemented)
 - **Routing**: React Router DOM
-- **State Management**: TanStack Query for server state
-- **Package Manager**: pnpm (specified in package.json)
+- **Package Manager**: npm (package-lock.json; CI runs npm ci)
 
 ## Development Commands
 
@@ -59,7 +58,7 @@ src/
 
 - **Single Page Application**: Uses React Router for client-side routing
 - **Component Structure**: Main page (Index.tsx) imports section components for modularity
-- **Styling Approach**: Uses Tailwind CSS with custom color variables defined in tailwind.config.ts
+- **Styling Approach**: Uses Tailwind CSS with custom color variables defined in src/index.css
 - **Custom Colors**: Uses a specific color palette (primary-blue, dark-slate, neutral-gray, etc.)
 - **Path Aliases**: Uses "@" alias for src directory imports
 - **Font**: Uses Lexend font family (always Lexend)
@@ -73,15 +72,13 @@ The project has shadcn/ui configured but no UI components are currently installe
 
 ## Development Notes
 
-- The project uses Lovable for deployment and editing
-- Custom domain can be connected via Lovable project settings
 - Development server runs on port 3000 with host "::" for accessibility
 - Uses SWC for faster React compilation
 - No test framework is currently configured
 
 ## Custom Styling
 
-The project uses a custom color palette defined in tailwind.config.ts:
+The project uses a custom color palette defined in src/index.css:
 - Primary blue: #3A6EA5
 - Dark slate: #2C3E50
 - Neutral gray: #6C7A89
