@@ -6,7 +6,7 @@ const channels = [
   { name: 'Instagram', handle: '@whoisladleo', href: 'https://www.instagram.com/whoisladleo' },
   { name: 'YouTube', handle: '@whoisladleo', href: 'https://www.youtube.com/@whoisladleo' },
   { name: 'X', handle: '@whoisladleo', href: 'https://x.com/whoisladleo' },
-  { name: 'WhatsApp Channel', handle: 'Denis w AI', href: 'https://whatsapp.com/channel/0029Vb9cSaN47XeIH2y5yA3x' },
+  { name: 'WhatsApp Channel', handle: 'whoisladleo', href: 'https://whatsapp.com/channel/0029Vb9cSaN47XeIH2y5yA3x' },
 ];
 
 const pains = [
