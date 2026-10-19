@@ -33,7 +33,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
-          to_email: 'denis@afyahewani.io'
+          to_email: 'rwelamila.jr@gmail.com'
         },
         'VhfVy_twLxM2HtuqY' // Your Public Key
       );
