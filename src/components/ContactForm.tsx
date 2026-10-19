@@ -9,7 +9,7 @@ interface ContactFormProps {
   defaultMessage?: string;
 }
 
-const ContactForm = ({ isOpen, onClose, subject = "Inquiring for Experimental Plan", defaultMessage = "" }: ContactFormProps) => {
+const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", defaultMessage = "" }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -45,7 +45,7 @@ const ContactForm = ({ isOpen, onClose, subject = "Inquiring for Experimental Pl
         setFormData({
           name: '',
           email: '',
-          subject: 'Inquiring for Experimental Plan',
+          subject: subject,
           message: ''
         });
       }, 2000);
@@ -139,7 +139,7 @@ const ContactForm = ({ isOpen, onClose, subject = "Inquiring for Experimental Pl
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-blue resize-none"
-              placeholder="Tell me about your project..."
+              placeholder="What would you like AI to help your business with?"
             />
           </div>
           
@@ -147,26 +147,20 @@ const ContactForm = ({ isOpen, onClose, subject = "Inquiring for Experimental Pl
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex-1 bg-primary-blue text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition disabled:opacity-50"
+              className="flex-1 bg-primary-blue text-white py-2 px-4 rounded-full hover:bg-opacity-90 transition disabled:opacity-50"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
             <button
               type="button"
               onClick={onClose}
-              className="px-4 py-2 border border-gray-300 rounded-md text-neutral-gray hover:bg-gray-100 transition"
+              className="px-4 py-2 border border-gray-300 rounded-full text-neutral-gray hover:bg-gray-100 transition"
             >
               Cancel
             </button>
           </div>
         </form>
         
-        <p className="text-sm text-neutral-gray mt-4 text-center">
-          Or email directly at{' '}
-          <a href="mailto:denis@afyahewani.io" className="text-primary-blue hover:underline">
-            denis@afyahewani.io
-          </a>
-        </p>
       </div>
     </div>
   );

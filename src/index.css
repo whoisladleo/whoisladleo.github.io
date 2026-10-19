@@ -99,3 +99,21 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  .minute-sweep {
+    stroke-dasharray: 100 100;
+    stroke-dashoffset: 0;
+    animation: minute-sweep 2.4s cubic-bezier(0.65, 0, 0.35, 1) 0.3s both;
+  }
+  @keyframes minute-sweep {
+    from { stroke-dashoffset: 100; }
+    to { stroke-dashoffset: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .minute-sweep { animation: none; }
+  }
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: 3px solid #F2B705;
+    outline-offset: 3px;
+  }
+}

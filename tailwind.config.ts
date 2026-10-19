@@ -13,11 +13,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-blue': '#3A6EA5',
-        'dark-slate': '#2C3E50',
-        'neutral-gray': '#6C7A89',
-        'light-gray': '#F5F7FA',
-        'soft-blue': '#E9EFF6',
+        ocean: '#0E4A52',
+        sun: '#F2B705',
+        ink: '#13262A',
+        'muted-ink': '#4F6266',
+        paper: '#F4F8F7',
+        line: '#D3DEDC',
+        'primary-blue': '#0E4A52',
+        'dark-slate': '#13262A',
+        'neutral-gray': '#4F6266',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -53,7 +57,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Afacad', 'system-ui', 'sans-serif'],
+        sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

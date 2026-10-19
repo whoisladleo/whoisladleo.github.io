@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a React-based personal portfolio website built with Vite, TypeScript, and Tailwind CSS. The project uses shadcn/ui components and is designed to be deployed via Lovable.
+This is a React-based personal portfolio website built with Vite, TypeScript, and Tailwind CSS. The project uses shadcn/ui components and is deployed to GitHub Pages via .github/workflows/vite.yaml on push to main, served at https://me.whoisladleo.dev (public/CNAME).
 
 ## Key Technologies
 
@@ -62,7 +62,7 @@ src/
 - **Styling Approach**: Uses Tailwind CSS with custom color variables defined in tailwind.config.ts
 - **Custom Colors**: Uses a specific color palette (primary-blue, dark-slate, neutral-gray, etc.)
 - **Path Aliases**: Uses "@" alias for src directory imports
-- **Font**: Uses Afacad font family
+- **Font**: Uses Bricolage Grotesque font family
 
 ## shadcn/ui Configuration
 
