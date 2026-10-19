@@ -57,7 +57,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+        sans: ['Lexend', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

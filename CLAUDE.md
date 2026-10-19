@@ -62,7 +62,7 @@ src/
 - **Styling Approach**: Uses Tailwind CSS with custom color variables defined in tailwind.config.ts
 - **Custom Colors**: Uses a specific color palette (primary-blue, dark-slate, neutral-gray, etc.)
 - **Path Aliases**: Uses "@" alias for src directory imports
-- **Font**: Uses Bricolage Grotesque font family
+- **Font**: Uses Lexend font family (always Lexend)
 
 ## shadcn/ui Configuration
 
