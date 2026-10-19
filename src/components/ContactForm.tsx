@@ -69,17 +69,17 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
           <X size={24} />
         </button>
         
-        <h2 className="text-2xl font-bold text-dark-slate mb-6">Get in Touch</h2>
+        <h2 className="text-2xl font-bold text-dark-slate mb-6">Tell me about your business</h2>
         
         {submitStatus === 'success' && (
           <div className="mb-4 p-3 bg-green-100 text-green-700 rounded-md">
-            Thank you! Your message has been sent successfully.
+            Message sent. I'll reply within two working days.
           </div>
         )}
         
         {submitStatus === 'error' && (
           <div className="mb-4 p-3 bg-red-100 text-red-700 rounded-md">
-            Sorry, there was an error sending your message. Please try again.
+            Your message didn't send. Check your connection and try again, or DM me on Instagram @whoisladleo.
           </div>
         )}
         
@@ -149,7 +149,7 @@ const ContactForm = ({ isOpen, onClose, subject = "AI consultation inquiry", def
               disabled={isSubmitting}
               className="flex-1 bg-primary-blue text-white py-2 px-4 rounded-full hover:brightness-110 transition disabled:opacity-50"
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? 'Sending…' : 'Send message'}
             </button>
             <button
               type="button"

@@ -9,18 +9,48 @@ const channels = [
   { name: 'WhatsApp Channel', handle: 'Denis w AI', href: 'https://whatsapp.com/channel/0029Vb9cSaN47XeIH2y5yA3x' },
 ];
 
-const help = [
+const pains = [
   {
-    title: 'Find where AI saves you hours',
-    body: 'We go through how your team actually works and pick the few tasks where AI pays off first.',
+    title: 'The same questions, all day',
+    body: 'Prices, availability, "where is my order?" Your staff answer them one WhatsApp message at a time while the real work waits.',
   },
   {
-    title: 'Set up the tools and workflows',
-    body: 'Practical setups your staff can use on Monday: prompts, assistants and simple automations.',
+    title: 'Reports that eat a whole day',
+    body: 'Someone copies numbers from three places into one spreadsheet every week. It is slow, it is boring, and it still has mistakes.',
   },
   {
-    title: 'Train your team to use it well',
-    body: 'Hands-on sessions in Swahili or English, built around your own documents and processes.',
+    title: 'You tried ChatGPT. Nothing changed.',
+    body: 'A few people use it to write emails. The business runs exactly like it did last year.',
+  },
+];
+
+const steps = [
+  {
+    title: 'Find the hours',
+    body: 'I sit with your team, map how the work really gets done, and pick the two or three tasks where AI pays off fastest. You get a short plan, not a 60-page report.',
+  },
+  {
+    title: 'Set it up',
+    body: 'We build it into the tools you already use: WhatsApp, Google Workspace, Excel, your own system. Prompts, assistants and simple automations your staff can use the next morning.',
+  },
+  {
+    title: 'Make it stick',
+    body: 'Hands-on training in Swahili or English, using your own documents and your own customers. People keep using what they understand.',
+  },
+];
+
+const reasons = [
+  {
+    title: 'I build real systems',
+    body: "I'm CTO at Tunzaa and Flowteller and CEO of Taskflow OS. I put AI into payment, travel and business platforms that real customers use every day.",
+  },
+  {
+    title: 'I teach it in public',
+    body: 'AI kwa Dakika Moja breaks down one practical AI idea a day, in plain Swahili and English. Watch a few and you will know how I explain things before we ever meet.',
+  },
+  {
+    title: "I'll tell you when AI is the wrong answer",
+    body: 'Some problems need a better process, not a new tool. If that is your situation, I will say so and save you the money.',
   },
 ];
 
@@ -60,7 +90,21 @@ const ClockRing = () => (
 );
 
 const Index = () => {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
+  const [form, setForm] = useState<{ open: boolean; subject: string; message: string }>({
+    open: false,
+    subject: 'AI consultation inquiry',
+    message: '',
+  });
+
+  const openConsultation = () =>
+    setForm({ open: true, subject: 'AI consultation inquiry', message: '' });
+
+  const openTask = () =>
+    setForm({
+      open: true,
+      subject: 'Can AI do this task?',
+      message: 'The task my team spends too much time on is: ',
+    });
 
   return (
     <div className="min-h-screen bg-paper text-ink">
@@ -74,52 +118,139 @@ const Index = () => {
             Denis w AI
           </a>
           <div className="flex items-center gap-5 text-sm sm:text-base">
-            <a href="#watch" className="hidden sm:inline hover:text-sun">Watch</a>
+            <a href="#how" className="hidden sm:inline hover:text-sun">How it works</a>
             <a href="#clinic" className="hidden sm:inline hover:text-sun">AI Business Clinic</a>
-            <a href="#work" className="hover:text-sun">Work with me</a>
+            <a href="#watch" className="hidden sm:inline hover:text-sun">Watch</a>
+            <button onClick={openConsultation} className="font-semibold text-sun hover:underline">
+              Book a consultation
+            </button>
           </div>
         </nav>
 
         <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-20 sm:pt-16 sm:pb-28 flex flex-col-reverse md:flex-row md:items-center gap-12 md:gap-16">
           <div className="max-w-2xl">
-            <h1 className="font-bold leading-[0.95] tracking-tight text-[clamp(3rem,9vw,6.5rem)]">
-              AI kwa Dakika Moja
+            <h1 className="font-bold leading-[1.02] tracking-tight text-[clamp(2.6rem,7vw,5rem)]">
+              Your team is doing work AI could finish in a minute.
             </h1>
             <p className="mt-6 text-xl sm:text-2xl text-white/85 leading-snug max-w-xl">
-              One-minute lessons on using AI for real work, in Swahili and English.
-            </p>
-            <p className="mt-4 text-lg text-white/70 max-w-xl">
-              I'm Denis Rwelamila. I build fintech and business software in Tanzania, and I help
-              teams here put AI to work without the hype.
+              I help businesses in Tanzania find those hours, set AI up inside the tools they already
+              use, and train their people to actually use it. In Swahili or English.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <a
-                href="https://www.tiktok.com/@whoisladleo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-sun text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105"
-              >
-                Watch the series
-              </a>
               <button
-                onClick={() => setIsContactFormOpen(true)}
-                className="border-2 border-white/60 text-white font-semibold px-6 py-3 rounded-full hover:border-white hover:bg-white/10"
+                onClick={openConsultation}
+                className="bg-sun text-ink font-semibold px-6 py-3 rounded-full hover:brightness-105"
               >
                 Book an AI consultation
               </button>
+              <a
+                href="#how"
+                className="border-2 border-white/60 text-white font-semibold px-6 py-3 rounded-full hover:border-white hover:bg-white/10"
+              >
+                See how it works
+              </a>
             </div>
+            <p className="mt-6 text-white/65">
+              Denis Rwelamila. CTO, founder, and host of AI kwa Dakika Moja.
+            </p>
           </div>
           <ClockRing />
         </section>
       </header>
 
       <main id="main">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight max-w-2xl">
+            Does this sound like your office?
+          </h2>
+          <div className="mt-12 grid md:grid-cols-3 gap-10">
+            {pains.map((p) => (
+              <div key={p.title}>
+                <h3 className="text-xl font-semibold">{p.title}</h3>
+                <p className="mt-3 text-muted-ink leading-relaxed">{p.body}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-12 text-xl sm:text-2xl font-semibold max-w-3xl leading-snug">
+            None of this needs more staff. It needs the right AI set up in the right place, and a
+            team that knows how to use it.
+          </p>
+        </section>
+
+        <section id="how" className="bg-white border-y border-line">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">How we work together</h2>
+            <p className="mt-4 text-lg text-muted-ink max-w-2xl">
+              Three steps. The first one already gives you something you can use.
+            </p>
+            <ol className="mt-12 grid md:grid-cols-3 gap-10">
+              {steps.map((s, i) => (
+                <li key={s.title} className="border-t-4 border-ocean pt-5">
+                  <span className="text-5xl font-bold text-sun tabular-nums" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <h3 className="mt-2 text-xl font-semibold">{s.title}</h3>
+                  <p className="mt-3 text-muted-ink leading-relaxed">{s.body}</p>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-12">
+              <button
+                onClick={openConsultation}
+                className="bg-ocean text-white font-semibold px-7 py-4 rounded-full hover:bg-ink"
+              >
+                Book an AI consultation
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Why work with me</h2>
+          <div className="mt-12 grid md:grid-cols-3 gap-10">
+            {reasons.map((r) => (
+              <div key={r.title}>
+                <h3 className="text-xl font-semibold">{r.title}</h3>
+                <p className="mt-3 text-muted-ink leading-relaxed">{r.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section id="clinic" className="bg-sun">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid md:grid-cols-[1.4fr_1fr] gap-10 items-end">
+            <div>
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
+                Rather learn it yourself?
+              </h2>
+              <p className="mt-5 text-xl max-w-xl leading-relaxed">
+                The AI Business Clinic is 10 weeks of hands-on work for owners and teams. Every week
+                you take one real problem from your business and leave with it solved. No lectures,
+                no theory you will forget by Friday.
+              </p>
+            </div>
+            <div className="md:justify-self-end">
+              <a
+                href="https://ellipsis.co.tz/programmes/ai-business-clinic"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-ink text-white font-semibold px-7 py-4 rounded-full hover:bg-ocean"
+              >
+                Join the AI Business Clinic
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section id="watch" className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
           <div className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Follow along</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+                Not ready to talk? Watch first.
+              </h2>
               <p className="mt-4 text-lg text-muted-ink max-w-md">
-                A new short every day. Each one stands on its own: one tool, one idea, one minute.
+                AI kwa Dakika Moja: one practical AI idea a day, in under a minute. Pick one and
+                try it this afternoon.
               </p>
             </div>
             <ul className="divide-y divide-line border-y border-line">
@@ -140,68 +271,31 @@ const Index = () => {
           </div>
         </section>
 
-        <section id="clinic" className="bg-sun">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid md:grid-cols-[1.4fr_1fr] gap-10 items-end">
-            <div>
-              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
-                AI Business Clinic
-              </h2>
-              <p className="mt-5 text-xl max-w-xl leading-relaxed">
-                A 10-week, hands-on programme for business owners and teams who want to use AI
-                properly. No lectures, no fluff: you work on your own business every week.
-              </p>
-            </div>
-            <div className="md:justify-self-end">
+        <section className="bg-ocean text-white">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+            <h2 className="text-3xl sm:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
+              Tell me one task your team hates doing.
+            </h2>
+            <p className="mt-5 text-xl text-white/85 max-w-2xl leading-relaxed">
+              I'll reply with whether AI can take it off their plate, and roughly how. No sales
+              pitch, just a straight answer.
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              <button
+                onClick={openTask}
+                className="bg-sun text-ink font-semibold px-7 py-4 rounded-full hover:brightness-105"
+              >
+                Send me the task
+              </button>
               <a
-                href="https://ellipsis.co.tz/programmes/ai-business-clinic"
+                href="https://ig.me/m/whoisladleo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-ink text-white font-semibold px-7 py-4 rounded-full hover:bg-ocean"
+                className="border-2 border-white/60 text-white font-semibold px-7 py-4 rounded-full hover:border-white hover:bg-white/10"
               >
-                See the programme and sign up
+                DM me on Instagram
               </a>
             </div>
-          </div>
-        </section>
-
-        <section id="work" className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Work with me</h2>
-          <p className="mt-4 text-lg text-muted-ink max-w-2xl">
-            AI consultations for businesses in Tanzania and East Africa. Tell me what's slowing your
-            team down and I'll tell you honestly whether AI can help.
-          </p>
-          <div className="mt-12 grid md:grid-cols-3 gap-10">
-            {help.map((h) => (
-              <div key={h.title} className="border-t-4 border-ocean pt-5">
-                <h3 className="text-xl font-semibold">{h.title}</h3>
-                <p className="mt-3 text-muted-ink leading-relaxed">{h.body}</p>
-              </div>
-            ))}
-          </div>
-          <div className="mt-12 flex flex-wrap gap-3">
-            <button
-              onClick={() => setIsContactFormOpen(true)}
-              className="bg-ocean text-white font-semibold px-7 py-4 rounded-full hover:bg-ink"
-            >
-              Send me a message
-            </button>
-            <a
-              href="https://ig.me/m/whoisladleo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-ocean text-ocean font-semibold px-7 py-4 rounded-full hover:bg-ocean hover:text-white"
-            >
-              DM me on Instagram
-            </a>
-          </div>
-        </section>
-
-        <section className="border-t border-line">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
-            <p className="text-lg text-muted-ink max-w-3xl leading-relaxed">
-              By day I'm CTO at Tunzaa and Flowteller and CEO of Taskflow OS, building payment,
-              travel and business platforms. Everything I teach comes from using AI in that work.
-            </p>
           </div>
         </section>
       </main>
@@ -216,10 +310,11 @@ const Index = () => {
       </footer>
 
       <ContactForm
-        isOpen={isContactFormOpen}
-        onClose={() => setIsContactFormOpen(false)}
-        subject="AI consultation inquiry"
-        defaultMessage=""
+        key={form.subject + String(form.open)}
+        isOpen={form.open}
+        onClose={() => setForm((f) => ({ ...f, open: false }))}
+        subject={form.subject}
+        defaultMessage={form.message}
       />
     </div>
   );
